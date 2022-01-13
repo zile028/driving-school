@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito+Sans:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #010101;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+}
+
+.py {
+  padding: 140px 0;
+}
+
+@media (max-width: 768px) {
+  .py {
+    padding: 30px 0;
+  }
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/**************
+TOOP BAR
+**************/
+.top-bar {
+  background-color: #233785;
+}
+
+.top-bar ul {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.top-bar ul li {
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 5px;
+  padding-right: 10px;
+  border-right: 1px solid #989898;
+}
+
+.top-bar ul li i {
+  margin-right: 5px;
+}
+
+.top-bar ul li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+/**************
+navbar
+**************/
+/*# sourceMappingURL=style.css.map */

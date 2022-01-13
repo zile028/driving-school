@@ -1,0 +1,31 @@
+h2 {
+  font-size: 1.9rem;
+}
+hgroup {
+  text-align: center;
+  padding: 50px 0;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $orange;
+  }
+}
+.btn {
+  background-color: $turquoise;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: all $transition;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($turquoise, 0.5);
+    color: $black;
+  }
+}
