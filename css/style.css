@@ -34,7 +34,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.4s ease;
+  transition: color 0.5s ease;
 }
 
 a:hover {
@@ -62,6 +62,61 @@ img {
 }
 
 /**************
+FLEX BOX
+**************/
+/*************
+BACKGROUN BASIC
+*************/
+/*************
+BUTTON BASIC
+*************/
+/*************
+CELAR RIGHT MARGIN
+*************/
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+hgroup {
+  text-align: center;
+  padding: 50px 0;
+}
+
+hgroup h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+hgroup p {
+  color: #c47300;
+}
+
+.btn {
+  background-color: #233785;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: all 0.5s ease;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #010101;
+}
+
+/**************
 TOOP BAR
 **************/
 .top-bar {
@@ -74,11 +129,17 @@ TOOP BAR
 }
 
 .top-bar ul li {
-  display: inline-block;
-  color: #ffffff;
   margin-right: 5px;
   padding-right: 10px;
+  display: inline-block;
+  color: #ffffff;
   border-right: 1px solid #989898;
+  font-size: 0.9rem;
+}
+
+.top-bar ul li:last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .top-bar ul li i {
@@ -86,11 +147,83 @@ TOOP BAR
 }
 
 .top-bar ul li:last-child {
-  padding-right: 0;
   border-right: none;
 }
 
 /**************
-navbar
+NAV
 **************/
+nav {
+  padding: 10px 0;
+}
+
+nav article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+nav .navbar ul li {
+  margin-right: 30px;
+  padding-right: 0;
+  font-weight: 600;
+  color: #989898;
+}
+
+nav .navbar ul li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/*************
+HEADER
+*************/
+header {
+  height: 60vh;
+  position: relative;
+  color: #ffffff;
+}
+
+header img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+header article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+header article p {
+  margin: 20px 0;
+}
+
+header article .btn {
+  margin-right: 10px;
+}
+
+header article .btn:last-child {
+  background-color: #808080;
+}
 /*# sourceMappingURL=style.css.map */

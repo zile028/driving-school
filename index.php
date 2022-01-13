@@ -28,23 +28,51 @@
 
     <!-------- NAV -------->
 
-    <nav class="container">
-        <div class="logo">
-            <a href="index.php"><img src="img/logo.png" alt="logo"></a>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="index.php">Courses</a></li>
-                <li><a href="index.php">Teachers</a></li>
-                <li><a href="index.php">Blog</a></li>
-                <li><a href="index.php">About</a></li>
-                <li><a href="index.php">Contact</a></li>
-                <li><a href="http://wwww.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="http://wwww.twitter.com"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
+    <nav>
+        <article class="container">
+            <div class="logo">
+                <a href="index.php"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php">Courses</a></li>
+                    <li><a href="index.php">Teachers</a></li>
+                    <li><a href="index.php">Blog</a></li>
+                    <li><a href="index.php">About</a></li>
+                    <li><a href="index.php">Contact</a></li>
+                    <li><a href="http://wwww.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="http://wwww.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </article>
     </nav>
+
+    <!-------- HEADER -------->
+
+    <header>
+        <img src="img/slide-03.jpg" alt="">
+        <article>
+            <h1>free video lessons</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur incidunt perspiciatis quo, fuga
+                dolor vitae assumenda vel magni eaque natus?</p>
+            <div>
+                <a href="" class="btn">Our services</a>
+                <a href="" class="btn">Our Teacher</a>
+            </div>
+        </article>
+    </header>
+
+    <!-------- SERVICES -------->
+
+    <div class="section services container py">
+        <article>
+            <img src="img/services-01.jpg" alt="">
+            <div>
+                <h4><i class="fas fa-car"></i>Lern to drive</h4>
+            </div>
+        </article>
+    </div>
 </body>
 
 </html>

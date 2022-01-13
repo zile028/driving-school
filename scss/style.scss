@@ -1,5 +1,7 @@
 @import "var";
 @import "basic";
+@import "mixins";
+@import "global";
 
 /**************
 TOOP BAR
@@ -10,16 +12,15 @@ TOOP BAR
     padding: 10px 0;
     text-align: right;
     li {
+      @include clearRightSpace($m-right: 5px, $p-right: 10px);
       display: inline-block;
       color: $white;
-      margin-right: 5px;
-      padding-right: 10px;
       border-right: 1px solid $lightGray;
+      font-size: 0.9rem;
       i {
         margin-right: 5px;
       }
       &:last-child {
-        padding-right: 0;
         border-right: none;
       }
     }
@@ -27,8 +28,52 @@ TOOP BAR
 }
 
 /**************
-navbar
+NAV
 **************/
+nav {
+  padding: 10px 0;
+  article {
+    @include flex($y: center);
+  }
+  .navbar {
+    ul {
+      @include flex;
+      li {
+        @include clearRightSpace($m-right: 30px);
+        font-weight: 600;
+        color: $lightGray;
+      }
+    }
+  }
+}
 
-.navbar {
+/*************
+HEADER
+*************/
+header {
+  height: 60vh;
+  position: relative;
+  color: $white;
+  img {
+    @include bgBasic;
+    width: 100%;
+    height: 100%;
+  }
+  article {
+    @include flex(center, center, column);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    p {
+      margin: 20px 0;
+    }
+    .btn {
+      margin-right: 10px;
+      &:last-child {
+        background-color: $gray;
+      }
+    }
+  }
 }
