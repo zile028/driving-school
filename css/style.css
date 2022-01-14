@@ -376,7 +376,26 @@ features
 /*************
 COURSES
 *************/
+.courses .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.courses .wrapper .card {
+  flex: 0 0 23%;
+  min-width: 200px;
+}
+
+.courses .wrapper img {
+  width: 100%;
+  height: 200px;
+}
+
 .courses ul .star {
+  font-size: 1rem;
   position: relative;
   line-height: 60px;
   display: inline-block;
@@ -386,8 +405,9 @@ COURSES
 
 .courses ul .star:before {
   content: "\2605";
-  width: 60px;
-  height: 60px;
-  font-size: 60px;
+  color: #ffb636;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */

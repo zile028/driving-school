@@ -164,14 +164,70 @@
                             <li class="star"></li>
                         </ul>
                     </div>
-
-
-
                     <h4>Rules and requirements</h4>
                     <p>$100</p>
                     <a href="" class="btn">Detail</a>
                 </div>
             </div>
+
+            <div class="card">
+                <img src="img/course-02.jpg" alt="">
+                <div class="card-body">
+                    <div>
+                        <p>Driving, Road Signs</p>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                        </ul>
+                    </div>
+                    <h4>Rules and requirements</h4>
+                    <p>$100</p>
+                    <a href="" class="btn">Detail</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/course-03.jpg" alt="">
+                <div class="card-body">
+                    <div>
+                        <p>Driving, Road Signs</p>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                        </ul>
+                    </div>
+                    <h4>Rules and requirements</h4>
+                    <p>$100</p>
+                    <a href="" class="btn">Detail</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/course-04.jpg" alt="">
+                <div class="card-body">
+                    <div>
+                        <p>Driving, Road Signs</p>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                        </ul>
+                    </div>
+                    <h4>Rules and requirements</h4>
+                    <p>$100</p>
+                    <a href="" class="btn">Detail</a>
+                </div>
+            </div>
+
+
         </article>
     </section>
 
