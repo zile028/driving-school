@@ -226,4 +226,70 @@ header article .btn {
 header article .btn:last-child {
   background-color: #808080;
 }
+
+/**************
+SERVICES
+**************/
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.services article {
+  flex: 0 0 32%;
+  position: relative;
+  overflow: hidden;
+}
+
+.services article:hover div {
+  top: 0;
+}
+
+.services article img {
+  height: 100%;
+  width: 100%;
+}
+
+.services article div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  background-color: rgba(35, 55, 133, 0.8);
+  color: #ffffff;
+  top: calc(100% - 60px);
+  height: 100%;
+  padding: 0 10px 10px;
+  transition: 0.5s ease;
+}
+
+.services article div h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.services article div p {
+  flex: 1;
+}
+
+.services article div a:hover {
+  color: #ff6347;
+}
+
+.services article div i {
+  margin-right: 10px;
+}
+
+/**************
+features
+**************/
+.features {
+  background-color: #989898;
+}
 /*# sourceMappingURL=style.css.map */

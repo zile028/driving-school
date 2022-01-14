@@ -77,3 +77,60 @@ header {
     }
   }
 }
+/**************
+SERVICES
+**************/
+
+.services {
+  @include flex;
+  article {
+    flex: 0 0 32%;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      div {
+        top: 0;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    div {
+      @include flex(flex-start, flex-start, column);
+      position: absolute;
+      background-color: rgba($primary, 0.8);
+      color: $white;
+      $offsetBottom: 60px;
+      top: calc(100% - #{$offsetBottom});
+      height: 100%;
+      padding: 0 10px 10px;
+      transition: $transition;
+      h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        line-height: $offsetBottom;
+      }
+      p {
+        flex: 1;
+      }
+      a {
+        &:hover {
+          color: $hoverLink;
+        }
+      }
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/**************
+features
+**************/
+
+.features {
+  background-color: $lightGray;
+}

@@ -65,14 +65,43 @@
 
     <!-------- SERVICES -------->
 
-    <div class="section services container py">
+    <section class="section services container py">
         <article>
             <img src="img/services-01.jpg" alt="">
             <div>
-                <h4><i class="fas fa-car"></i>Lern to drive</h4>
+                <h3><i class="fas fa-car"></i>Lern to drive</h3>
+                <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
+                    tempor, quis porta tellus dictum </p>
+                <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
             </div>
         </article>
-    </div>
+        <article>
+
+            <img src="img/services-02.jpg" alt="">
+            <div>
+                <h3><i class="fas fa-shield-alt"></i>Lern to drive</h3>
+                <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
+                    tempor, quis porta tellus dictum </p>
+                <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
+            </div>
+        </article>
+        <article>
+            <img src="img/services-03.jpg" alt="">
+            <div>
+                <h3><i class="fas fa-id-card"></i>Lern to drive</h3>
+                <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
+                    tempor, quis porta tellus dictum </p>
+                <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
+            </div>
+        </article>
+    </section>
+
+
+    <!-------- FEATURES -------->
+
+    <section class="features py">
+        <article class="container"></article>
+    </section>
 </body>
 
 </html>
