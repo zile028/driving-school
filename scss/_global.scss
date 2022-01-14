@@ -16,6 +16,22 @@ hgroup {
     color: $orange;
   }
 }
+.title-section {
+  text-align: center;
+  margin-bottom: 5em;
+  h2 {
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: block;
+      height: 6px;
+      width: 50px;
+      background-color: $primary;
+      border-radius: 3px;
+      margin: 10px auto;
+    }
+  }
+}
 .btn {
   background-color: $primary;
   padding: 1em 3em;

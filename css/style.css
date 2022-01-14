@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
-  color: #010101;
+  color: #333333;
 }
 
 h1,
@@ -96,6 +96,25 @@ hgroup p {
   color: #c47300;
 }
 
+.title-section {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.title-section h2 {
+  text-transform: uppercase;
+}
+
+.title-section h2:after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 50px;
+  background-color: #233785;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
 .btn {
   background-color: #233785;
   padding: 1em 3em;
@@ -113,7 +132,7 @@ hgroup p {
 
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #010101;
+  color: #333333;
 }
 
 /**************
@@ -133,7 +152,7 @@ TOOP BAR
   padding-right: 10px;
   display: inline-block;
   color: #ffffff;
-  border-right: 1px solid #989898;
+  border-right: 1px solid #f2f2f2;
   font-size: 0.9rem;
 }
 
@@ -177,7 +196,7 @@ nav .navbar ul li {
   margin-right: 30px;
   padding-right: 0;
   font-weight: 600;
-  color: #989898;
+  color: #808080;
 }
 
 nav .navbar ul li:last-child {
@@ -185,16 +204,20 @@ nav .navbar ul li:last-child {
   margin-right: 0;
 }
 
+nav .navbar ul li:hover {
+  color: #ff6347;
+}
+
 /*************
 HEADER
 *************/
-header {
+.header {
   height: 60vh;
   position: relative;
   color: #ffffff;
 }
 
-header img {
+.header img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -202,7 +225,7 @@ header img {
   height: 100%;
 }
 
-header article {
+.header article {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -215,15 +238,15 @@ header article {
   width: 100%;
 }
 
-header article p {
+.header article p {
   margin: 20px 0;
 }
 
-header article .btn {
+.header article .btn {
   margin-right: 10px;
 }
 
-header article .btn:last-child {
+.header article .btn:last-child {
   background-color: #808080;
 }
 
@@ -242,6 +265,7 @@ SERVICES
   flex: 0 0 32%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .services article:hover div {
@@ -290,6 +314,80 @@ SERVICES
 features
 **************/
 .features {
-  background-color: #989898;
+  background-color: #f2f2f2;
+}
+
+.features article:not(:first-child) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.features article:not(:first-child) .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 23%;
+  min-width: 200px;
+  background-color: #ffffff;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 5px;
+  padding: 0 20px 20px;
+}
+
+.features article:not(:first-child) .wrapper p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.features article:not(:first-child) .icon {
+  display: block;
+  font-size: 2rem;
+  height: 2em;
+  width: 2em;
+  margin: 0 auto;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  line-height: 2em;
+  margin-bottom: 30px;
+  margin-top: -1em;
+}
+
+.features article:not(:first-child) .icon i {
+  position: relative;
+}
+
+.features article:not(:first-child) .icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #233785;
+  inset: 0;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+
+/*************
+COURSES
+*************/
+.courses ul .star {
+  position: relative;
+  line-height: 60px;
+  display: inline-block;
+  transition: color 0.2s ease;
+  color: #ebebeb;
+}
+
+.courses ul .star:before {
+  content: "\2605";
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
 }
 /*# sourceMappingURL=style.css.map */

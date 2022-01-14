@@ -41,7 +41,10 @@ nav {
       li {
         @include clearRightSpace($m-right: 30px);
         font-weight: 600;
-        color: $lightGray;
+        color: $gray;
+        &:hover {
+          color: $hoverLink;
+        }
       }
     }
   }
@@ -50,7 +53,7 @@ nav {
 /*************
 HEADER
 *************/
-header {
+.header {
   height: 60vh;
   position: relative;
   color: $white;
@@ -87,6 +90,7 @@ SERVICES
     flex: 0 0 32%;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     &:hover {
       div {
         top: 0;
@@ -133,4 +137,68 @@ features
 
 .features {
   background-color: $lightGray;
+  article:not(:first-child) {
+    @include flex;
+    .wrapper {
+      @include flex(center, flex-start, column);
+      flex: 0 0 23%;
+      min-width: 200px;
+      background-color: $white;
+      border: 1px solid rgba($gray, 0.3);
+      border-radius: 5px;
+      padding: 0 20px 20px;
+
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    .icon {
+      display: block;
+      font-size: 2rem;
+      height: 2em;
+      width: 2em;
+      margin: 0 auto;
+      color: $white;
+      position: relative;
+      text-align: center;
+      line-height: 2em;
+      margin-bottom: 30px;
+      margin-top: -1em;
+      i {
+        position: relative;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $primary;
+        inset: 0;
+        border-radius: 10px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+/*************
+COURSES
+*************/
+.courses {
+  ul {
+    .star {
+      position: relative;
+      line-height: 60px;
+      display: inline-block;
+      transition: color 0.2s ease;
+      color: #ebebeb;
+      &:before {
+        content: "\2605";
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
+      }
+    }
+  }
 }

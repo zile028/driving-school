@@ -50,7 +50,7 @@
 
     <!-------- HEADER -------->
 
-    <header>
+    <header class="header">
         <img src="img/slide-03.jpg" alt="">
         <article>
             <h1>free video lessons</h1>
@@ -79,7 +79,7 @@
 
             <img src="img/services-02.jpg" alt="">
             <div>
-                <h3><i class="fas fa-shield-alt"></i>Lern to drive</h3>
+                <h3><i class="fas fa-shield-alt"></i>Become a Safer Driver</h3>
                 <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                     tempor, quis porta tellus dictum </p>
                 <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
@@ -88,7 +88,7 @@
         <article>
             <img src="img/services-03.jpg" alt="">
             <div>
-                <h3><i class="fas fa-id-card"></i>Lern to drive</h3>
+                <h3><i class="fas fa-id-card"></i>Driving licence</h3>
                 <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                     tempor, quis porta tellus dictum </p>
                 <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
@@ -100,8 +100,81 @@
     <!-------- FEATURES -------->
 
     <section class="features py">
-        <article class="container"></article>
+        <article class="title-section container">
+            <h2>OUR FEATURES</h2>
+        </article>
+        <article class="container">
+            <div class="wrapper">
+                <div class="icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h4>INSTRUCTIONAL VIDEO</h4>
+                <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
+                    Vivamus commodo consectetur commodo.</p>
+            </div>
+
+            <div class="wrapper">
+                <div class="icon">
+                    <i class="fas fa-hand-point-right"></i>
+                </div>
+                <h4>DRIVING LESSONS</h4>
+                <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
+                    Vivamus commodo consectetur commodo.</p>
+            </div>
+
+            <div class="wrapper">
+                <div class="icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h4>DRIVER CONFIDENCE</h4>
+                <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
+                    Vivamus commodo consectetur commodo.</p>
+            </div>
+
+            <div class="wrapper">
+                <div class="icon">
+                    <i class="fas fa-address-card"></i>
+                </div>
+                <h4>CERTIFIED</h4>
+                <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
+                    Vivamus commodo consectetur commodo.</p>
+            </div>
+        </article>
     </section>
+
+
+    <!-------- COURSES -------->
+
+    <section class="courses container py">
+        <article class="title-section">
+            <h2>Our Course Products</h2>
+            <p>Our most popular packages are 5 and 10 lessons. All packages are pre-paid in full upon 1st lesson.</p>
+        </article>
+        <article class="wrapper">
+            <div class="card">
+                <img src="img/course-01.jpg" alt="">
+                <div class="card-body">
+                    <div>
+                        <p>Driving, Road Signs</p>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                        </ul>
+                    </div>
+
+
+
+                    <h4>Rules and requirements</h4>
+                    <p>$100</p>
+                    <a href="" class="btn">Detail</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
 </body>
 
 </html>
