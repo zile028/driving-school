@@ -3,7 +3,21 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.3rem;
+}
+h6 {
+  font-size: 1.1rem;
 }
 hgroup {
   text-align: center;
@@ -18,7 +32,7 @@ hgroup {
 }
 .title-section {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 40px;
   h2 {
     text-transform: uppercase;
     &:after {
@@ -34,19 +48,40 @@ hgroup {
 }
 .btn {
   background-color: $primary;
-  padding: 1em 3em;
+  padding: 1em 2.5em;
   text-transform: uppercase;
   color: $white;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   display: inline-block;
   transition: all $transition;
   border: none;
   outline: none;
   border-radius: 5px;
+  letter-spacing: 1px;
   cursor: pointer;
   &:hover {
-    background-color: rgba($white, 0.5);
-    color: $black;
+    background-color: $darkPrimary !important;
+  }
+}
+
+.card {
+  border: 1px solid $lightGray;
+  img {
+    width: 100%;
+  }
+  &-body {
+    padding: 20px;
+    div {
+      @include flex($y: center);
+      font-size: 0.9rem;
+      color: $gray;
+    }
+    h6 {
+      line-height: 2rem;
+    }
+    .btn {
+      margin-top: 20px;
+    }
   }
 }

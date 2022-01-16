@@ -27,6 +27,10 @@ h6 {
   font-weight: 700;
 }
 
+input {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -79,7 +83,25 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.1rem;
 }
 
 hgroup {
@@ -98,7 +120,7 @@ hgroup p {
 
 .title-section {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 40px;
 }
 
 .title-section h2 {
@@ -117,22 +139,52 @@ hgroup p {
 
 .btn {
   background-color: #233785;
-  padding: 1em 3em;
+  padding: 1em 2.5em;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   display: inline-block;
   transition: all 0.5s ease;
   border: none;
   outline: none;
   border-radius: 5px;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #333333;
+  background-color: #07185a !important;
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.card-body h6 {
+  line-height: 2rem;
+}
+
+.card-body .btn {
+  margin-top: 20px;
 }
 
 /**************
@@ -197,6 +249,9 @@ nav .navbar ul li {
   padding-right: 0;
   font-weight: 600;
   color: #808080;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  cursor: pointer;
 }
 
 nav .navbar ul li:last-child {
@@ -205,7 +260,33 @@ nav .navbar ul li:last-child {
 }
 
 nav .navbar ul li:hover {
-  color: #ff6347;
+  color: #07185a;
+  border-bottom: 3px solid #07185a;
+}
+
+nav .navbar ul li:hover > ul {
+  transform: scale(1);
+}
+
+nav .navbar ul li ul {
+  transform: scale(0);
+  position: absolute;
+  background-color: #ffffff;
+  line-height: 2em;
+  padding: 15px;
+  z-index: 2;
+  transition: transform 0.5s ease;
+  transform-origin: left top;
+}
+
+nav .navbar ul li ul li {
+  line-height: 3;
+  width: 100%;
+}
+
+nav .navbar ul li ul li a {
+  display: block;
+  width: 100%;
 }
 
 /*************
@@ -247,7 +328,12 @@ HEADER
 }
 
 .header article .btn:last-child {
-  background-color: #808080;
+  color: #233785;
+  background-color: #f2f2f2;
+}
+
+.header article .btn:last-child:hover {
+  color: #ffffff;
 }
 
 /**************
@@ -311,7 +397,7 @@ SERVICES
 }
 
 /**************
-features
+FEATURES
 **************/
 .features {
   background-color: #f2f2f2;
@@ -323,6 +409,7 @@ features
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  padding-top: 30px;
 }
 
 .features article:not(:first-child) .wrapper {
@@ -340,7 +427,7 @@ features
 }
 
 .features article:not(:first-child) .wrapper p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 10px;
 }
@@ -386,7 +473,7 @@ COURSES
 
 .courses .wrapper .card {
   flex: 0 0 23%;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .courses .wrapper img {
@@ -394,20 +481,192 @@ COURSES
   height: 200px;
 }
 
-.courses ul .star {
-  font-size: 1rem;
-  position: relative;
-  line-height: 60px;
-  display: inline-block;
-  transition: color 0.2s ease;
-  color: #ebebeb;
+.courses .wrapper:last-child {
+  margin-top: 30px;
 }
 
-.courses ul .star:before {
-  content: "\2605";
+.courses .wrapper:last-child .btn {
+  margin: 0 auto;
+  background-color: #808080;
+}
+
+.courses .card {
+  border: 1px solid #f2f2f2;
+}
+
+.courses .card-body {
+  padding: 20px;
+}
+
+.courses .card-body div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.courses .card-body h6 {
+  line-height: 2rem;
+}
+
+.courses .card-body .btn {
+  margin-top: 20px;
+}
+
+.courses .star {
+  position: relative;
+  transition: color 0.2s ease;
+  color: #808080;
+}
+
+.courses .star.s-1 span:nth-child(n + 5) {
   color: #ffb636;
+}
+
+.courses .star.s-2 span:nth-child(n + 4) {
+  color: #ffb636;
+}
+
+.courses .star.s-3 span:nth-child(n + 3) {
+  color: #ffb636;
+}
+
+.courses .star.s-4 span:nth-child(n + 2) {
+  color: #ffb636;
+}
+
+.courses .star.s-5 span:nth-child(n + 1) {
+  color: #ffb636;
+}
+
+.courses .star span {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.courses .star span:before {
+  content: "\2605";
   width: 1em;
   height: 1em;
   font-size: 1em;
+}
+
+/*************
+CTA
+*************/
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/testimonial-bg-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.cta form {
+  text-align: center;
+}
+
+.cta form div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.cta form div input {
+  flex: 0 0 23%;
+  padding: 15px 10px;
+}
+
+.cta form button {
+  margin-top: 30px;
+}
+
+/*************
+NEWS
+*************/
+.news article:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.news article:nth-child(2) .card {
+  flex: 0 0 31%;
+}
+
+/*************
+MAPS
+*************/
+.maps {
+  position: relative;
+}
+
+.maps::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.maps iframe {
+  width: 100%;
+}
+
+/*************
+FOOTER
+*************/
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+footer article:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 50px 0;
+}
+
+footer article:first-child div {
+  flex: 0 0 30%;
+}
+
+footer article:first-child div p {
+  margin-top: 30px;
+  line-height: 1.9;
+}
+
+footer article:first-child div a:hover {
+  color: #ff6347;
+}
+
+footer article:first-child div ul {
+  margin-top: 30px;
+}
+
+footer article:first-child div ul li {
+  line-height: 1.9;
+}
+
+footer article:first-child div ul li i {
+  margin-right: 5px;
+}
+
+footer article:last-child {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
