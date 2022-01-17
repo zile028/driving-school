@@ -50,50 +50,7 @@
 
 
 <!-------- FEATURES -------->
-
-<section class="features py">
-    <article class="title-section container">
-        <h2>OUR FEATURES</h2>
-    </article>
-    <article class="container">
-        <div class="wrapper">
-            <div class="icon">
-                <i class="fas fa-film"></i>
-            </div>
-            <h6>INSTRUCTIONAL VIDEO</h6>
-            <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
-                Vivamus commodo consectetur commodo.</p>
-        </div>
-
-        <div class="wrapper">
-            <div class="icon">
-                <i class="fas fa-hand-point-right"></i>
-            </div>
-            <h6>DRIVING LESSONS</h6>
-            <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
-                Vivamus commodo consectetur commodo.</p>
-        </div>
-
-        <div class="wrapper">
-            <div class="icon">
-                <i class="fas fa-car"></i>
-            </div>
-            <h6>DRIVER CONFIDENCE</h6>
-            <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
-                Vivamus commodo consectetur commodo.</p>
-        </div>
-
-        <div class="wrapper">
-            <div class="icon">
-                <i class="fas fa-address-card"></i>
-            </div>
-            <h6>CERTIFIED</h6>
-            <p>Morbi efficitur tellus sapien, non feugiat ligula fringilla in. Morbi scelerisque placerat porta.
-                Vivamus commodo consectetur commodo.</p>
-        </div>
-    </article>
-</section>
-
+<?php include "partials/features.php" ?>
 
 <!-------- COURSES -------->
 
@@ -222,7 +179,7 @@
         <div class="card">
             <img src="img/news-01.jpg" alt="">
             <div class="card-body">
-                <h3>Trainee licence option with 20 hours training</h3>
+                <h4>Trainee licence option with 20 hours training</h4>
                 <span>July 18, 2017 | </span>
                 <a href="">Pro Tips</a>
                 <p>
@@ -236,7 +193,7 @@
         <div class="card">
             <img src="img/news-02.jpg" alt="">
             <div class="card-body">
-                <h3>Trainee licence option with 20 hours training</h3>
+                <h4>Trainee licence option with 20 hours training</h4>
                 <span>July 18, 2017 | </span>
                 <a href="">Pro Tips</a>
                 <p>
@@ -250,7 +207,7 @@
         <div class="card">
             <img src="img/news-03.jpg" alt="">
             <div class="card-body">
-                <h3>Trainee licence option with 20 hours training</h3>
+                <h4>Trainee licence option with 20 hours training</h4>
                 <span>July 18, 2017 | </span>
                 <a href="">Pro Tips</a>
                 <p>
@@ -262,7 +219,6 @@
         </div>
     </article>
 </section>
-
 
 <!-------- MAPS -------->
 <section class="maps">

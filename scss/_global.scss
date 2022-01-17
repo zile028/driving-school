@@ -19,6 +19,14 @@ h5 {
 h6 {
   font-size: 1.1rem;
 }
+input,
+textarea {
+  padding: 15px 10px;
+  &::placeholder {
+    font-family: $textFont;
+    font-size: 1rem;
+  }
+}
 hgroup {
   text-align: center;
   padding: 50px 0;

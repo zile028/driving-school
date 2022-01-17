@@ -3,7 +3,7 @@
 <footer>
     <article class="container">
         <div>
-            <a href="index.ph"><img src="img/logo-02.png" alt=""></a>
+            <a href="index.php"><img src="img/logo-02.png" alt=""></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore debitis ullam cum magnam
                 molestias nobis, voluptates temporibus accusantium corrupti recusandae sequi? Facilis qui asperiores
                 voluptates molestiae illum earum quo.</p>
