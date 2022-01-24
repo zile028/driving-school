@@ -473,3 +473,32 @@ CONTACT
     }
   }
 }
+
+/*************
+TEACHER
+*************/
+.teacher {
+  .row {
+    @include flex;
+    .card {
+      flex: 0 0 24%;
+    }
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  p {
+    margin: 10px 0;
+  }
+  i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

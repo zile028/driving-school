@@ -61,7 +61,7 @@ img {
 }
 
 .container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -803,5 +803,42 @@ CONTACT
 .contact article form textarea {
   flex: 0 0 100%;
   margin-bottom: 20px;
+}
+
+/*************
+TEACHER
+*************/
+.teacher .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.teacher .row .card {
+  flex: 0 0 24%;
+}
+
+.teacher h4 {
+  font-size: 1.5rem;
+}
+
+.teacher h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.teacher p {
+  margin: 10px 0;
+}
+
+.teacher i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.teacher i:hover {
+  color: #233785;
 }
 /*# sourceMappingURL=style.css.map */

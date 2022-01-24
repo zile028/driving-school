@@ -10,7 +10,7 @@
             dolor vitae assumenda vel magni eaque natus?</p>
         <div>
             <a href="" class="btn">Our services</a>
-            <a href="" class="btn">Our Teacher</a>
+            <a href="teachers.php" class="btn">Our Teacher</a>
         </div>
     </article>
 </header>
@@ -56,7 +56,7 @@
 
 <section class="courses container py">
     <article class="title-section">
-        <h2>Our Course Products</h2>
+        <h2>Our Course</h2>
         <p>Our most popular packages are 5 and 10 lessons. All packages are pre-paid in full upon 1st lesson.</p>
     </article>
 
