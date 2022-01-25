@@ -75,6 +75,26 @@ hgroup {
 
 .card {
   border: 1px solid $lightGray;
+  &.row {
+    @include flex;
+    margin-bottom: 30px;
+    text-align: right;
+    &:nth-child(even) {
+      background-color: $lightGray;
+      img {
+        order: 1;
+      }
+      .card-body {
+        text-align: left;
+      }
+    }
+    img {
+      max-width: 320px;
+    }
+    .card-body {
+      flex: 1;
+    }
+  }
   img {
     width: 100%;
   }

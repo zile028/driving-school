@@ -9,7 +9,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur incidunt perspiciatis quo, fuga
             dolor vitae assumenda vel magni eaque natus?</p>
         <div>
-            <a href="" class="btn">Our services</a>
+            <a href="courses.php" class="btn">Our services</a>
             <a href="teachers.php" class="btn">Our Teacher</a>
         </div>
     </article>
@@ -24,7 +24,7 @@
             <h3><i class="fas fa-car"></i>Lern to drive</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
-            <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
+            <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>
         </div>
     </article>
     <article>
@@ -34,7 +34,7 @@
             <h3><i class="fas fa-shield-alt"></i>Become a Safer Driver</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
-            <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
+            <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>
         </div>
     </article>
     <article>
@@ -43,7 +43,7 @@
             <h3><i class="fas fa-id-card"></i>Driving licence</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
-            <a href="/"><i class="fas fa-caret-right"></i>Read more</a>
+            <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>
         </div>
     </article>
 </section>
@@ -76,7 +76,7 @@
                 </div>
                 <h6>Rules and requirements</h6>
                 <h6>$100</h6>
-                <a href="" class="btn">Detail</a>
+                <a href="courses_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -93,9 +93,9 @@
                         <span></span>
                     </div>
                 </div>
-                <h6>Rules and requirements</h6>
+                <h6>Driving basics I</h6>
                 <h6>$100</h6>
-                <a href="" class="btn">Detail</a>
+                <a href="courses_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -112,9 +112,9 @@
                         <span></span>
                     </div>
                 </div>
-                <h6>Rules and requirements</h6>
+                <h6>Driving basics II</h6>
                 <h6>$100</h6>
-                <a href="" class="btn">Detail</a>
+                <a href="courses_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -131,15 +131,15 @@
                         <span></span>
                     </div>
                 </div>
-                <h6>Rules and requirements</h6>
+                <h6>Driving basics II and Test</h6>
                 <h6>$100</h6>
-                <a href="" class="btn">Detail</a>
+                <a href="courses_single.php" class="btn">Detail</a>
             </div>
         </div>
     </article>
 
     <article class="wrapper">
-        <a href="" class="btn">View all courses</a>
+        <a href="courses.php" class="btn">View all courses</a>
     </article>
 
 </section>
@@ -186,7 +186,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="" class="btn">Continue reading</a>
+                <a href="single.php" class="btn">Continue reading</a>
             </div>
         </div>
 
@@ -200,7 +200,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="" class="btn">Continue reading</a>
+                <a href="single.php" class="btn">Continue reading</a>
             </div>
         </div>
 
@@ -214,7 +214,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="" class="btn">Continue reading</a>
+                <a href="single.php" class="btn">Continue reading</a>
             </div>
         </div>
     </article>

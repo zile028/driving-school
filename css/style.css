@@ -172,6 +172,36 @@ hgroup p {
   border: 1px solid #f2f2f2;
 }
 
+.card.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.card.row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.card.row:nth-child(even) img {
+  order: 1;
+}
+
+.card.row:nth-child(even) .card-body {
+  text-align: left;
+}
+
+.card.row img {
+  max-width: 320px;
+}
+
+.card.row .card-body {
+  flex: 1;
+}
+
 .card img {
   width: 100%;
 }
@@ -244,7 +274,11 @@ nav article {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+}
+
+nav .navbar {
+  position: relative;
 }
 
 nav .navbar ul {
@@ -252,7 +286,8 @@ nav .navbar ul {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
+  height: 100%;
 }
 
 nav .navbar ul li {
@@ -260,9 +295,8 @@ nav .navbar ul li {
   padding-right: 0;
   font-weight: 600;
   color: #808080;
-  border-bottom: 3px solid transparent;
-  position: relative;
   cursor: pointer;
+  background-color: yellow;
 }
 
 nav .navbar ul li:last-child {
@@ -270,7 +304,11 @@ nav .navbar ul li:last-child {
   margin-right: 0;
 }
 
-nav .navbar ul li:hover {
+nav .navbar ul li a {
+  border-bottom: 3px solid transparent;
+}
+
+nav .navbar ul li:hover > a {
   color: #07185a;
   border-bottom: 3px solid #07185a;
 }
@@ -288,6 +326,7 @@ nav .navbar ul li ul {
   z-index: 2;
   transition: transform 0.5s ease;
   transform-origin: left top;
+  top: calc(100% + 3px);
 }
 
 nav .navbar ul li ul li {

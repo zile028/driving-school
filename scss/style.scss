@@ -34,21 +34,27 @@ NAV
 nav {
   padding: 10px 0;
   article {
-    @include flex($y: center);
+    @include flex($y: stretch);
   }
   .navbar {
+    position: relative;
     ul {
-      @include flex;
+      @include flex($y: center);
+      height: 100%;
       li {
         @include clearRightSpace($m-right: 30px);
         font-weight: 600;
         color: $gray;
-        border-bottom: 3px solid transparent;
-        position: relative;
         cursor: pointer;
+        background-color: yellow;
+        a {
+          border-bottom: 3px solid transparent;
+        }
         &:hover {
-          color: $darkPrimary;
-          border-bottom: 3px solid $darkPrimary;
+          & > a {
+            color: $darkPrimary;
+            border-bottom: 3px solid $darkPrimary;
+          }
           & > ul {
             transform: scale(1);
           }
@@ -62,6 +68,7 @@ nav {
           z-index: 2;
           transition: transform $transition;
           transform-origin: left top;
+          top: calc(100% + 3px);
           li {
             line-height: 3;
             width: 100%;
