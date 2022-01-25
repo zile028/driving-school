@@ -313,9 +313,10 @@ nav .navbar .drop ul {
   z-index: 2;
   transition: transform 0.5s ease;
   transform-origin: left top;
-  top: calc(100% + 3px);
+  top: 100%;
   background-color: #ffffff;
-  border: 1px solid red;
+  padding: 0 10px 10px;
+  min-width: 150px;
 }
 
 nav .navbar .drop ul li {

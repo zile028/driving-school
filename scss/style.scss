@@ -36,7 +36,6 @@ nav {
   article {
     @include flex($y: center);
   }
-
   .navbar {
     position: relative;
     & > ul {
@@ -57,23 +56,21 @@ nav {
         }
       }
     }
-
     .drop {
       ul {
         transform: scale(0);
         position: absolute;
-
         z-index: 2;
         transition: transform $transition;
         transform-origin: left top;
-        top: calc(100% + 3px);
+        top: 100%;
         background-color: $white;
-        border: 1px solid red;
+        padding: 0 10px 10px;
+        min-width: 150px;
         li {
           width: 100%;
           padding: 10px;
           background-color: $white;
-
           margin: 0;
           a {
             display: block;
