@@ -34,48 +34,50 @@ NAV
 nav {
   padding: 10px 0;
   article {
-    @include flex($y: stretch);
+    @include flex($y: center);
   }
+
   .navbar {
     position: relative;
-    ul {
-      @include flex($y: center);
-      height: 100%;
+    & > ul {
+      @include flex();
       li {
-        @include clearRightSpace($m-right: 30px);
+        margin-left: 30px;
         font-weight: 600;
         color: $gray;
         cursor: pointer;
-        background-color: yellow;
-        a {
-          border-bottom: 3px solid transparent;
-        }
+        border-bottom: 3px solid transparent;
+        transition: $transition;
         &:hover {
-          & > a {
-            color: $darkPrimary;
-            border-bottom: 3px solid $darkPrimary;
-          }
-          & > ul {
+          color: $darkPrimary;
+          border-bottom: 3px solid $darkPrimary;
+          &.drop ul {
             transform: scale(1);
           }
         }
-        ul {
-          transform: scale(0);
-          position: absolute;
+      }
+    }
+
+    .drop {
+      ul {
+        transform: scale(0);
+        position: absolute;
+
+        z-index: 2;
+        transition: transform $transition;
+        transform-origin: left top;
+        top: calc(100% + 3px);
+        background-color: $white;
+        border: 1px solid red;
+        li {
+          width: 100%;
+          padding: 10px;
           background-color: $white;
-          line-height: 2em;
-          padding: 15px;
-          z-index: 2;
-          transition: transform $transition;
-          transform-origin: left top;
-          top: calc(100% + 3px);
-          li {
-            line-height: 3;
+
+          margin: 0;
+          a {
+            display: block;
             width: 100%;
-            a {
-              display: block;
-              width: 100%;
-            }
           }
         }
       }

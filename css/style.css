@@ -274,67 +274,58 @@ nav article {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 
 nav .navbar {
   position: relative;
 }
 
-nav .navbar ul {
+nav .navbar > ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 100%;
+  align-items: stretch;
 }
 
-nav .navbar ul li {
-  margin-right: 30px;
-  padding-right: 0;
+nav .navbar > ul li {
+  margin-left: 30px;
   font-weight: 600;
   color: #808080;
   cursor: pointer;
-  background-color: yellow;
-}
-
-nav .navbar ul li:last-child {
-  padding-right: 0;
-  margin-right: 0;
-}
-
-nav .navbar ul li a {
   border-bottom: 3px solid transparent;
+  transition: 0.5s ease;
 }
 
-nav .navbar ul li:hover > a {
+nav .navbar > ul li:hover {
   color: #07185a;
   border-bottom: 3px solid #07185a;
 }
 
-nav .navbar ul li:hover > ul {
+nav .navbar > ul li:hover.drop ul {
   transform: scale(1);
 }
 
-nav .navbar ul li ul {
+nav .navbar .drop ul {
   transform: scale(0);
   position: absolute;
-  background-color: #ffffff;
-  line-height: 2em;
-  padding: 15px;
   z-index: 2;
   transition: transform 0.5s ease;
   transform-origin: left top;
   top: calc(100% + 3px);
+  background-color: #ffffff;
+  border: 1px solid red;
 }
 
-nav .navbar ul li ul li {
-  line-height: 3;
+nav .navbar .drop ul li {
   width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 0;
 }
 
-nav .navbar ul li ul li a {
+nav .navbar .drop ul li a {
   display: block;
   width: 100%;
 }
