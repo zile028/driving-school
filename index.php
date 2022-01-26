@@ -76,7 +76,7 @@
                 </div>
                 <h6>Rules and requirements</h6>
                 <h6>$100</h6>
-                <a href="courses_single.php" class="btn">Detail</a>
+                <a href="course_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -95,7 +95,7 @@
                 </div>
                 <h6>Driving basics I</h6>
                 <h6>$100</h6>
-                <a href="courses_single.php" class="btn">Detail</a>
+                <a href="course_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
                 </div>
                 <h6>Driving basics II</h6>
                 <h6>$100</h6>
-                <a href="courses_single.php" class="btn">Detail</a>
+                <a href="course_single.php" class="btn">Detail</a>
             </div>
         </div>
 
@@ -133,7 +133,7 @@
                 </div>
                 <h6>Driving basics II and Test</h6>
                 <h6>$100</h6>
-                <a href="courses_single.php" class="btn">Detail</a>
+                <a href="course_single.php" class="btn">Detail</a>
             </div>
         </div>
     </article>

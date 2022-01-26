@@ -17,7 +17,7 @@
     <article class="title-section">
         <h2>Our Courses</h2>
     </article>
-    <article class="">
+    <article>
         <div class="card row">
             <img src="img/course-01.jpg" alt="">
             <div class="card-body">

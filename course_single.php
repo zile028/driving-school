@@ -60,7 +60,7 @@
                 <a href=""><i class="fab fa-twitter"></i></a>
                 <a href=""><i class="fab fa-linkedin"></i></a>
                 <p>631-239-8818</p>
-                <a href="instructor-single.php" class="btn">View profile</a>
+                <a href="teacher_single.php" class="btn">View profile</a>
             </div>
         </div>
     </aside>

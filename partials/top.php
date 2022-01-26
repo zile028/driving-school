@@ -43,7 +43,7 @@
                             <li><a href="gallery.php">Gallery</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="news.php">News</a></li>
                     <li><a href="courses.php">Courses</a></li>
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="http://wwww.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
