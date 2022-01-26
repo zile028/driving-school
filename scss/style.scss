@@ -57,6 +57,12 @@ nav {
       }
     }
     .drop {
+      span::after {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: 5px;
+      }
       ul {
         transform: scale(0);
         position: absolute;
@@ -506,5 +512,42 @@ TEACHER
     &:hover {
       color: $primary;
     }
+  }
+}
+
+/**************
+SINGLE PAGE
+**************/
+
+.single {
+  @include flex;
+  article {
+    flex: 1;
+    margin-right: 30px;
+    h6 {
+      span {
+        font-weight: 400;
+      }
+    }
+    p {
+      margin: 20px 0;
+      line-height: 1.8;
+    }
+    ul {
+      margin-bottom: 20px;
+      li {
+        line-height: 1.8;
+        &::before {
+          content: "\f0a4";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: $primary;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  aside {
+    flex: 0 0 30%;
   }
 }

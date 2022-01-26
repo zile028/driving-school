@@ -307,6 +307,13 @@ nav .navbar > ul li:hover.drop ul {
   transform: scale(1);
 }
 
+nav .navbar .drop span::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
+
 nav .navbar .drop ul {
   transform: scale(0);
   position: absolute;
@@ -871,5 +878,50 @@ TEACHER
 
 .teacher i:hover {
   color: #233785;
+}
+
+/**************
+SINGLE PAGE
+**************/
+.single {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.single article {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.single article h6 span {
+  font-weight: 400;
+}
+
+.single article p {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.single article ul {
+  margin-bottom: 20px;
+}
+
+.single article ul li {
+  line-height: 1.8;
+}
+
+.single article ul li::before {
+  content: "\f0a4";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #233785;
+  margin-right: 5px;
+}
+
+.single aside {
+  flex: 0 0 30%;
 }
 /*# sourceMappingURL=style.css.map */

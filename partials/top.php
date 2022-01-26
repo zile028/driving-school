@@ -36,7 +36,7 @@
             <div class="navbar">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li class="drop">About
+                    <li class="drop"><span>About</span>
                         <ul>
                             <li><a href="intro.php">Intro</a></li>
                             <li><a href="teachers.php">Teachers</a></li>
