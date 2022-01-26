@@ -186,7 +186,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="single.php" class="btn">Continue reading</a>
+                <a href="news_single.php" class="btn">Continue reading</a>
             </div>
         </div>
 
@@ -200,7 +200,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="single.php" class="btn">Continue reading</a>
+                <a href="news_single.php" class="btn">Continue reading</a>
             </div>
         </div>
 
@@ -214,7 +214,7 @@
                     Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget
                     tortor tempor, quis porta tellus dictum.
                 </p>
-                <a href="single.php" class="btn">Continue reading</a>
+                <a href="news_single.php" class="btn">Continue reading</a>
             </div>
         </div>
     </article>
