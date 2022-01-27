@@ -20,8 +20,8 @@
 <section class="services container py">
     <article>
         <img src="img/services-01.jpg" alt="">
+        <h3><i class="fas fa-car"></i>Lern to drive</h3>
         <div>
-            <h3><i class="fas fa-car"></i>Lern to drive</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
             <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>
@@ -30,8 +30,8 @@
     <article>
 
         <img src="img/services-02.jpg" alt="">
+        <h3><i class="fas fa-shield-alt"></i>Become a Safer Driver</h3>
         <div>
-            <h3><i class="fas fa-shield-alt"></i>Become a Safer Driver</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
             <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>
@@ -39,8 +39,8 @@
     </article>
     <article>
         <img src="img/services-03.jpg" alt="">
+        <h3><i class="fas fa-id-card"></i>Driving licence</h3>
         <div>
-            <h3><i class="fas fa-id-card"></i>Driving licence</h3>
             <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor
                 tempor, quis porta tellus dictum </p>
             <a href="courses.php"><i class="fas fa-caret-right"></i>Read more</a>

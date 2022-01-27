@@ -16,14 +16,14 @@
 
 <section class="gallery container py">
     <article>
-        <div><img src="img/gallery-01.jpg" alt=""></div>
-        <div><img src="img/gallery-02.jpg" alt=""></div>
-        <div><img src="img/gallery-03.jpg" alt=""></div>
-        <div><img src="img/gallery-04.jpg" alt=""></div>
-        <div><img src="img/gallery-05.jpg" alt=""></div>
-        <div><img src="img/gallery-06.jpg" alt=""></div>
-        <div><img src="img/gallery-07.jpg" alt=""></div>
-        <div><img src="img/gallery-08.jpg" alt=""></div>
+        <div><img src="img/gallery-01.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-02.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-03.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-04.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-05.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-06.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-07.jpg" loading="lazy" alt=""></div>
+        <div><img src="img/gallery-08.jpg" loading="lazy" alt=""></div>
     </article>
 
 </section>

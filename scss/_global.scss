@@ -84,6 +84,9 @@ hgroup {
       background-color: $lightGray;
       img {
         order: 1;
+        @media (max-width: 768px) {
+          order: unset;
+        }
       }
       .card-body {
         text-align: left;
@@ -91,6 +94,9 @@ hgroup {
     }
     img {
       max-width: 320px;
+      @media (max-width: 768px) {
+        max-width: unset;
+      }
     }
     .card-body {
       flex: 1;

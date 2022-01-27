@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
+  min-width: 320px;
 }
 
 h1,
@@ -196,12 +197,24 @@ hgroup p {
   order: 1;
 }
 
+@media (max-width: 768px) {
+  .card.row:nth-child(even) img {
+    order: unset;
+  }
+}
+
 .card.row:nth-child(even) .card-body {
   text-align: left;
 }
 
 .card.row img {
   max-width: 320px;
+}
+
+@media (max-width: 768px) {
+  .card.row img {
+    max-width: unset;
+  }
 }
 
 .card.row .card-body {
@@ -239,6 +252,12 @@ TOOP BAR
 **************/
 .top-bar {
   background-color: #233785;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
 }
 
 .top-bar ul {
@@ -351,6 +370,11 @@ HEADER
   min-height: 60vh;
   position: relative;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header img {
@@ -365,11 +389,6 @@ HEADER
 }
 
 .header article {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   position: relative;
   height: 100%;
@@ -426,6 +445,10 @@ SERVICES
   }
 }
 
+.services article:hover h3 {
+  transform: translateY(100%);
+}
+
 .services article:hover div {
   top: 0;
 }
@@ -433,6 +456,22 @@ SERVICES
 .services article img {
   height: 100%;
   width: 100%;
+}
+
+.services article h3 {
+  position: absolute;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  bottom: 0;
+  padding: 5px;
+  color: #ffffff;
+  background-color: rgba(35, 55, 133, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.services article i {
+  margin-right: 10px;
 }
 
 .services article div {
@@ -444,16 +483,10 @@ SERVICES
   position: absolute;
   background-color: rgba(35, 55, 133, 0.8);
   color: #ffffff;
-  top: calc(100% - 60px);
+  top: 100%;
   height: 100%;
-  padding: 0 10px 10px;
+  padding: 20px;
   transition: 0.5s ease;
-}
-
-.services article div h3 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  line-height: 60px;
 }
 
 .services article div p {
@@ -462,10 +495,6 @@ SERVICES
 
 .services article div a:hover {
   color: #ff6347;
-}
-
-.services article div i {
-  margin-right: 10px;
 }
 
 /**************
@@ -803,6 +832,20 @@ GALLERY
   min-width: 200px;
 }
 
+@media (max-width: 768px) {
+  .gallery article div {
+    flex: 0 0 48%;
+    margin: 0 1% 2%;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery article div {
+    flex: 0 0 100%;
+    margin: 1% 0;
+  }
+}
+
 .gallery article div img {
   width: 100%;
 }
@@ -828,6 +871,12 @@ ABOUT
 
 .about article {
   flex: 0 0 49%;
+}
+
+@media (max-width: 768px) {
+  .about article {
+    flex: 0 0 100%;
+  }
 }
 
 .about article ul {
@@ -859,11 +908,19 @@ CONTACT
 }
 
 .contact article:first-child {
-  flex: 0 0 60%;
+  flex: 1;
 }
 
 .contact article:last-child {
   flex: 0 0 38%;
+  margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+  .contact article:last-child {
+    flex: 0 0 100%;
+    margin-top: 30px;
+  }
 }
 
 .contact article h3 {
@@ -901,6 +958,12 @@ CONTACT
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .contact article form input {
+    flex: 0 0 100%;
+  }
+}
+
 .contact article form textarea {
   flex: 0 0 100%;
   margin-bottom: 20px;
@@ -919,6 +982,19 @@ TEACHER
 
 .teacher .row .card {
   flex: 0 0 24%;
+}
+
+@media (max-width: 768px) {
+  .teacher .row .card {
+    flex: 0 0 49%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .teacher .row .card {
+    flex: 0 0 100%;
+  }
 }
 
 .teacher h4 {
@@ -1011,6 +1087,12 @@ SINGLE PAGE
 .single .news .card {
   flex: 0 0 48%;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .single .news .card {
+    flex: 0 0 100%;
+  }
 }
 
 .single iframe {
