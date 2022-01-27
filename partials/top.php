@@ -33,7 +33,10 @@
             <div class="logo">
                 <a href="index.php"><img src="img/logo.png" alt="logo"></a>
             </div>
-            <div class="navbar">
+            <div class="nav-btn">
+                <button id="menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="navbar" id="menu-box">
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li class="drop"><span>About</span>

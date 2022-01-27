@@ -292,6 +292,7 @@ NAV
 **************/
 nav {
   padding: 10px 0;
+  position: relative;
 }
 
 nav article {
@@ -302,8 +303,39 @@ nav article {
   align-items: center;
 }
 
-nav .navbar {
-  position: relative;
+nav .logo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .nav-btn {
+  width: 25px;
+}
+
+nav .nav-btn button {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .navbar {
+    transition: max-height 0.5s ease;
+    max-height: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: #ffffff;
+  }
 }
 
 nav .navbar > ul {
@@ -314,6 +346,12 @@ nav .navbar > ul {
   align-items: stretch;
 }
 
+@media (max-width: 768px) {
+  nav .navbar > ul {
+    display: block;
+  }
+}
+
 nav .navbar > ul li {
   margin-left: 30px;
   font-weight: 600;
@@ -321,6 +359,13 @@ nav .navbar > ul li {
   cursor: pointer;
   border-bottom: 3px solid transparent;
   transition: 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  nav .navbar > ul li {
+    margin-left: 0;
+    padding: 10px 15px;
+  }
 }
 
 nav .navbar > ul li:hover {
@@ -349,6 +394,20 @@ nav .navbar .drop ul {
   background-color: #ffffff;
   padding: 0 10px 10px;
   min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  nav .navbar .drop ul {
+    position: relative;
+    transform: scale(1);
+    max-height: 0;
+    overflow: hidden;
+    transition-property: max-height;
+  }
+}
+
+nav .navbar .drop ul.active {
+  transform: scale(1);
 }
 
 nav .navbar .drop ul li {

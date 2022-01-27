@@ -35,13 +35,46 @@ NAV
 **************/
 nav {
   padding: 10px 0;
+  position: relative;
   article {
     @include flex($y: center);
   }
+  .logo {
+    flex: 1;
+    margin-right: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .nav-btn {
+    width: 25px;
+    button {
+      outline: none;
+      border: none;
+      background: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
   .navbar {
-    position: relative;
+    @media (max-width: 768px) {
+      transition: max-height $transition;
+      max-height: 0;
+      overflow-y: auto;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      left: 0;
+      z-index: 2;
+      background-color: $white;
+    }
+    &.toggle {
+    }
     & > ul {
       @include flex();
+      @media (max-width: 768px) {
+        display: block;
+      }
       li {
         margin-left: 30px;
         font-weight: 600;
@@ -49,6 +82,10 @@ nav {
         cursor: pointer;
         border-bottom: 3px solid transparent;
         transition: $transition;
+        @media (max-width: 768px) {
+          margin-left: 0;
+          padding: 10px 15px;
+        }
         &:hover {
           color: $darkPrimary;
           border-bottom: 3px solid $darkPrimary;
@@ -65,6 +102,7 @@ nav {
         font-weight: 900;
         margin-left: 5px;
       }
+
       ul {
         transform: scale(0);
         position: absolute;
@@ -75,6 +113,16 @@ nav {
         background-color: $white;
         padding: 0 10px 10px;
         min-width: 150px;
+        @media (max-width: 768px) {
+          position: relative;
+          transform: scale(1);
+          max-height: 0;
+          overflow: hidden;
+          transition-property: max-height;
+        }
+        &.active {
+          transform: scale(1);
+        }
         li {
           width: 100%;
           padding: 10px;
