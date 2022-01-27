@@ -53,7 +53,7 @@ img {
 .container {
   width: $containerWidth;
   margin: 0 auto;
-  @media (max-width: 1140px) {
-    // width: 95%;
+  @media (max-width: 768px) {
+    width: 95%;
   }
 }

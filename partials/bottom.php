@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="courses.php">Courses</a></li>
-                <li><a href="teacher.php">Teachers</a></li>
+                <li><a href="teachers.php">Teachers</a></li>
                 <li><a href="intro.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>

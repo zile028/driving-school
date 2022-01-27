@@ -75,6 +75,7 @@ hgroup {
 
 .card {
   border: 1px solid $lightGray;
+
   &.row {
     @include flex;
     margin-bottom: 30px;
