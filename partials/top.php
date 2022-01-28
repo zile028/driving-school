@@ -49,8 +49,9 @@
                     <li><a href="news.php">News</a></li>
                     <li><a href="courses.php">Courses</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><a href="http://wwww.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="http://wwww.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://wwww.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://wwww.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </li>
                 </ul>
             </div>
         </article>

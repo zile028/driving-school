@@ -304,8 +304,9 @@ nav article {
 }
 
 nav .logo {
-  flex: 1;
+  flex: 1 0 250px;
   margin-right: 20px;
+  max-width: 300px;
 }
 
 nav .logo img {
@@ -314,6 +315,13 @@ nav .logo img {
 
 nav .nav-btn {
   width: 25px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav .nav-btn {
+    display: block;
+  }
 }
 
 nav .nav-btn button {
@@ -357,8 +365,8 @@ nav .navbar > ul li {
   font-weight: 600;
   color: #808080;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
   transition: 0.5s ease;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -370,11 +378,21 @@ nav .navbar > ul li {
 
 nav .navbar > ul li:hover {
   color: #07185a;
-  border-bottom: 3px solid #07185a;
 }
 
 nav .navbar > ul li:hover.drop ul {
   transform: scale(1);
+}
+
+nav .navbar > ul i {
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  nav .navbar > ul i {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 }
 
 nav .navbar .drop span::after {
@@ -499,8 +517,14 @@ SERVICES
 
 @media (max-width: 768px) {
   .services article {
-    flex: 0 0 100%;
+    flex: 0 0 49%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .services article {
+    flex: 0 0 100%;
   }
 }
 
@@ -588,8 +612,14 @@ FEATURES
 
 @media (max-width: 768px) {
   .features article:not(:first-child) .wrapper {
-    flex: 0 0 100%;
+    flex: 0 0 49%;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .features article:not(:first-child) .wrapper {
+    flex: 0 0 100%;
   }
 }
 
@@ -645,8 +675,14 @@ COURSES
 
 @media (max-width: 768px) {
   .courses .wrapper .card {
-    flex: 0 0 100%;
+    flex: 0 0 49%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .courses .wrapper .card {
+    flex: 0 0 100%;
   }
 }
 
@@ -790,8 +826,14 @@ NEWS
 
 @media (max-width: 768px) {
   .news article:nth-child(2) .card {
-    flex: 0 0 100%;
+    flex: 0 0 49%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .news article:nth-child(2) .card {
+    flex: 0 0 100%;
   }
 }
 
@@ -836,14 +878,26 @@ footer article:first-child div {
   flex: 0 0 25%;
 }
 
+@media (max-width: 768px) {
+  footer article:first-child div {
+    flex: 0 0 49%;
+    margin-bottom: 20px;
+  }
+}
+
 footer article:first-child div:first-child {
   flex: 0 0 48%;
 }
 
 @media (max-width: 768px) {
+  footer article:first-child div:first-child {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 450px) {
   footer article:first-child div {
     flex: 0 0 100%;
-    margin-bottom: 20px;
   }
 }
 

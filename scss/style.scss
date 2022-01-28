@@ -40,14 +40,20 @@ nav {
     @include flex($y: center);
   }
   .logo {
-    flex: 1;
+    flex: 1 0 250px;
     margin-right: 20px;
+    max-width: 300px;
+
     img {
       width: 100%;
     }
   }
   .nav-btn {
     width: 25px;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
     button {
       outline: none;
       border: none;
@@ -68,8 +74,6 @@ nav {
       z-index: 2;
       background-color: $white;
     }
-    &.toggle {
-    }
     & > ul {
       @include flex();
       @media (max-width: 768px) {
@@ -80,18 +84,24 @@ nav {
         font-weight: 600;
         color: $gray;
         cursor: pointer;
-        border-bottom: 3px solid transparent;
         transition: $transition;
+        position: relative;
         @media (max-width: 768px) {
           margin-left: 0;
           padding: 10px 15px;
         }
         &:hover {
           color: $darkPrimary;
-          border-bottom: 3px solid $darkPrimary;
           &.drop ul {
             transform: scale(1);
           }
+        }
+      }
+      i {
+        margin-left: 30px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+          margin-right: 30px;
         }
       }
     }
@@ -192,9 +202,14 @@ SERVICES
     overflow: hidden;
     cursor: pointer;
     @media (max-width: 768px) {
-      flex: 0 0 100%;
+      flex: 0 0 49%;
       margin-bottom: 20px;
     }
+
+    @media (max-width: 650px) {
+      flex: 0 0 100%;
+    }
+
     &:hover {
       h3 {
         transform: translateY(100%);
@@ -262,8 +277,11 @@ FEATURES
       border-radius: 5px;
       padding: 0 20px 20px;
       @media (max-width: 768px) {
-        flex: 0 0 100%;
+        flex: 0 0 49%;
         margin-bottom: 50px;
+      }
+      @media (max-width: 650px) {
+        flex: 0 0 100%;
       }
       p {
         font-size: 1rem;
@@ -309,8 +327,11 @@ COURSES
       flex: 0 0 23%;
       min-width: 220px;
       @media (max-width: 768px) {
-        flex: 0 0 100%;
+        flex: 0 0 49%;
         margin-bottom: 20px;
+      }
+      @media (max-width: 650px) {
+        flex: 0 0 100%;
       }
     }
     img {
@@ -417,21 +438,15 @@ NEWS
       .card {
         flex: 0 0 31%;
         @media (max-width: 768px) {
-          flex: 0 0 100%;
+          flex: 0 0 49%;
           margin-bottom: 20px;
+        }
+        @media (max-width: 650px) {
+          flex: 0 0 100%;
         }
       }
     }
   }
-  // &-all {
-  //   article {
-  //     @include flex;
-  //   }
-  //   .card {
-  //     flex: 0 0 31%;
-  //     margin-bottom: 30px;
-  //   }
-  // }
 }
 
 /*************
@@ -464,14 +479,19 @@ footer {
       padding: 50px 0;
       div {
         flex: 0 0 25%;
-        &:first-child {
-          flex: 0 0 48%;
-        }
         @media (max-width: 768px) {
-          flex: 0 0 100%;
+          flex: 0 0 49%;
           margin-bottom: 20px;
         }
-
+        &:first-child {
+          flex: 0 0 48%;
+          @media (max-width: 768px) {
+            flex: 0 0 100%;
+          }
+        }
+        @media (max-width: 450px) {
+          flex: 0 0 100%;
+        }
         p {
           margin-top: 30px;
           line-height: 1.9;
