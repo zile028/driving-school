@@ -64,16 +64,7 @@
         <div class="card">
             <img src="img/course-01.jpg" alt="">
             <div class="card-body">
-                <div>
-                    <p>Driving, Road Signs</p>
-                    <div class="star s-1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <span>Driving, Road Signs</span>
                 <h6>Rules and requirements</h6>
                 <h6>$100</h6>
                 <a href="course_single.php" class="btn">Detail</a>
@@ -83,16 +74,7 @@
         <div class="card">
             <img src="img/course-02.jpg" alt="">
             <div class="card-body">
-                <div>
-                    <p>Driving, Road Signs</p>
-                    <div class="star s-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <span>Driving, Road Signs</span>
                 <h6>Driving basics I</h6>
                 <h6>$100</h6>
                 <a href="course_single.php" class="btn">Detail</a>
@@ -102,16 +84,7 @@
         <div class="card">
             <img src="img/course-03.jpg" alt="">
             <div class="card-body">
-                <div>
-                    <p>Driving, Road Signs</p>
-                    <div class="star s-3">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <span>Driving, Road Signs</span>
                 <h6>Driving basics II</h6>
                 <h6>$100</h6>
                 <a href="course_single.php" class="btn">Detail</a>
@@ -121,16 +94,7 @@
         <div class="card">
             <img src="img/course-04.jpg" alt="">
             <div class="card-body">
-                <div>
-                    <p>Driving, Road Signs</p>
-                    <div class="star s-4">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <span>Driving, Road Signs</span>
                 <h6>Driving basics II and Test</h6>
                 <h6>$100</h6>
                 <a href="course_single.php" class="btn">Detail</a>

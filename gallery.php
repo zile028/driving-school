@@ -5,7 +5,6 @@
 <header class="header">
     <img src="img/bg-title-01.jpg" alt="">
     <article>
-        <div> <a href="index.php"><i class="fas fa-home"></i>Home</a> <span>/ Our gallery</span></div>
         <h1>Our gallery</h1>
         <a href="contact.php" class="btn">Get in touch</a>
 

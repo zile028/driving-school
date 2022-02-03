@@ -350,49 +350,17 @@ COURSES
     border: 1px solid $lightGray;
     &-body {
       padding: 20px;
-      div {
-        @include flex($y: center);
+
+      span {
         font-size: 0.9rem;
         color: $gray;
       }
       h6 {
         line-height: 2rem;
       }
+
       .btn {
         margin-top: 20px;
-      }
-    }
-  }
-
-  .star {
-    position: relative;
-    transition: color 0.2s ease;
-    color: $gray;
-
-    &.s-1 span:nth-child(n + 5) {
-      color: #ffb636;
-    }
-    &.s-2 span:nth-child(n + 4) {
-      color: #ffb636;
-    }
-    &.s-3 span:nth-child(n + 3) {
-      color: #ffb636;
-    }
-    &.s-4 span:nth-child(n + 2) {
-      color: #ffb636;
-    }
-    &.s-5 span:nth-child(n + 1) {
-      color: #ffb636;
-    }
-
-    span {
-      display: inline-block;
-      font-size: 1rem;
-      &:before {
-        content: "\2605";
-        width: 1em;
-        height: 1em;
-        font-size: 1em;
       }
     }
   }

@@ -4,9 +4,7 @@
 <header class="header">
     <img src="img/bg-title-01.jpg" alt="">
     <article>
-        <div> <a href="index.php"><i class="fas fa-home"></i>Home</a> <span> / Course Title</span></div>
         <h1>Course Title</h1>
-        <!-- <a href="contact.php" class="btn">Get in touch</a> -->
     </article>
 </header>
 
@@ -16,16 +14,7 @@
         <div class="card">
             <img src="img/course-02.jpg" alt="">
             <div class="card-body">
-                <div>
-                    <p>Driving, Road Signs</p>
-                    <div class="star s-4">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <span>Driving, Road Signs</span>
                 <h3>Driving basics I</h3>
                 <h6>Available Dates: <span>1 May 2017, 30 May 2018</span></h6>
                 <h6>Locations: <span>Ave, New York</span></h6>

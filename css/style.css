@@ -708,12 +708,7 @@ COURSES
   padding: 20px;
 }
 
-.courses .card-body div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.courses .card-body span {
   font-size: 0.9rem;
   color: #808080;
 }
@@ -724,44 +719,6 @@ COURSES
 
 .courses .card-body .btn {
   margin-top: 20px;
-}
-
-.courses .star {
-  position: relative;
-  transition: color 0.2s ease;
-  color: #808080;
-}
-
-.courses .star.s-1 span:nth-child(n + 5) {
-  color: #ffb636;
-}
-
-.courses .star.s-2 span:nth-child(n + 4) {
-  color: #ffb636;
-}
-
-.courses .star.s-3 span:nth-child(n + 3) {
-  color: #ffb636;
-}
-
-.courses .star.s-4 span:nth-child(n + 2) {
-  color: #ffb636;
-}
-
-.courses .star.s-5 span:nth-child(n + 1) {
-  color: #ffb636;
-}
-
-.courses .star span {
-  display: inline-block;
-  font-size: 1rem;
-}
-
-.courses .star span:before {
-  content: "\2605";
-  width: 1em;
-  height: 1em;
-  font-size: 1em;
 }
 
 /*************
